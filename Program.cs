@@ -8,11 +8,11 @@ class Program
         
         // Get the current directory for the exe
         string workingDirectory = Environment.CurrentDirectory;
-        string projectDirectory = Directory.GetParent(workingDirectory).Parent.Parent.FullName;
+        //string projectDirectory = Directory.GetParent(workingDirectory).Parent.Parent.FullName;
 
-        if (projectDirectory is not null) {
+        if (workingDirectory is not null) {
             // Set the file path for trainings.txt
-            ParseJsonTrainings parseJsonTrainings = new ParseJsonTrainings(projectDirectory + "\\trainings.txt");
+            ParseJsonTrainings parseJsonTrainings = new ParseJsonTrainings(workingDirectory + "\\trainings.txt");
 
             // Attempt to parse JSON
             Console.WriteLine("Attempting to parse JSON file.");
@@ -44,13 +44,13 @@ class Program
             List<(Person person, Training training, bool isExpired)> peopleWithExpiredTrainings = TrainingAnalysis.FindExpiredTrainings(people, specifiedDate);
 
             // Output all results to JSON files
-            var filePath = projectDirectory + "\\TrainingCount.txt";
+            var filePath = workingDirectory + "\\TrainingCount.txt";
             TrainingAnalysis.TrainingCountToJson(trainingCount, filePath);
 
-            filePath = projectDirectory + "\\PeopleByTrainingAndYear.txt";
+            filePath = workingDirectory + "\\PeopleByTrainingAndYear.txt";
             TrainingAnalysis.PeopleByTrainingAndYearToJson(peopleByTrainingAndYear, filePath);
 
-            filePath = projectDirectory + "\\PeopleWithExpiredTrainings.txt";
+            filePath = workingDirectory + "\\PeopleWithExpiredTrainings.txt";
             TrainingAnalysis.PeopleWithExpiredTrainingsToJson(peopleWithExpiredTrainings, filePath);
 
             Console.WriteLine("Finished generating output files!");
