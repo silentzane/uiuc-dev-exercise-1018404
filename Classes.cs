@@ -10,3 +10,8 @@ public class Training {
     public DateOnly Timestamp { get; set; }
     public DateOnly? Expires { get; set; }
 }
+
+public class TrainingCount {
+    public string TrainingName { get; set; } = string.Empty;
+    public int CompletionCount { get; set; }
+}
