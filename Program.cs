@@ -29,11 +29,37 @@ class Program
         }
 
         if (people is not null) {
-            // Output methods go here
+            // Begin calling Training Analysis methods
+            Console.WriteLine("Generating training analysis data.");
+
+            // List of each completed training with a count of how many people have completed that training
+            List<TrainingCount> trainingCount = TrainingAnalysis.GetTrainingCount(people);
+
+            // List of all people that completed a specific training in the specified fiscal year
+            List<string> trainingNames = new List<string>() {"Electrical Safety for Labs", "X-Ray Safety", "Laboratory Safety Training"};
+            Dictionary<string, List<string>> peopleByTrainingAndYear = TrainingAnalysis.GetPeopleByTrainingAndYear(people, trainingNames, 2024);
+
+            // List of all people that have any completed trainings that have already expired, or will expire within one month of the specified date
+            DateOnly specifiedDate = new DateOnly(2023, 10, 1);
+            List<(Person person, Training training, bool isExpired)> peopleWithExpiredTrainings = TrainingAnalysis.FindExpiredTrainings(people, specifiedDate);
+
+            // Output all results to JSON files
+            var filePath = projectDirectory + "\\TrainingCount.txt";
+            TrainingAnalysis.TrainingCountToJson(trainingCount, filePath);
+
+            filePath = projectDirectory + "\\PeopleByTrainingAndYear.txt";
+            TrainingAnalysis.PeopleByTrainingAndYearToJson(peopleByTrainingAndYear, filePath);
+
+            filePath = projectDirectory + "\\PeopleWithExpiredTrainings.txt";
+            TrainingAnalysis.PeopleWithExpiredTrainingsToJson(peopleWithExpiredTrainings, filePath);
+
+            Console.WriteLine("Finished generating output files!");
         }
         else {
             Console.WriteLine("No people found in file. Possible error parsing JSON.");
             return;
         }
+
+        return;
     }
 }
