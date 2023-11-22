@@ -1,0 +1,102 @@
+[
+  {
+    "TrainingName": "Electrical Safety for Labs",
+    "CompletionCount": 125
+  },
+  {
+    "TrainingName": "Safe Handling of Human Cell Lines/Materials in a Research Laboratory",
+    "CompletionCount": 109
+  },
+  {
+    "TrainingName": "Awareness Training for the Transport of Hazardous Material",
+    "CompletionCount": 117
+  },
+  {
+    "TrainingName": "X-Ray Safety",
+    "CompletionCount": 130
+  },
+  {
+    "TrainingName": "Radiation Safety Annual Refresher",
+    "CompletionCount": 128
+  },
+  {
+    "TrainingName": "Using Hazardous Chemicals in an Animal Care Facility",
+    "CompletionCount": 121
+  },
+  {
+    "TrainingName": "Chemical Waste Requirements",
+    "CompletionCount": 121
+  },
+  {
+    "TrainingName": "Safety Practices and Procedures to Prevent Zoonotic Diseases While Working With Cattle",
+    "CompletionCount": 126
+  },
+  {
+    "TrainingName": "Transportation of Infectious Substances, Category B",
+    "CompletionCount": 113
+  },
+  {
+    "TrainingName": "Working in Cold Temperatures",
+    "CompletionCount": 121
+  },
+  {
+    "TrainingName": "Occupational Exposure to Bloodborne Pathogens",
+    "CompletionCount": 106
+  },
+  {
+    "TrainingName": "Laboratory Safety Training",
+    "CompletionCount": 118
+  },
+  {
+    "TrainingName": "Basic Training Program for Animal Users",
+    "CompletionCount": 127
+  },
+  {
+    "TrainingName": "Physical Science Responsible Conduct of Research Course 1.",
+    "CompletionCount": 122
+  },
+  {
+    "TrainingName": "Animal Care And Use Risk Assessment",
+    "CompletionCount": 106
+  },
+  {
+    "TrainingName": "Understanding Biosafety",
+    "CompletionCount": 131
+  },
+  {
+    "TrainingName": "NIH Guidelines Overview",
+    "CompletionCount": 105
+  },
+  {
+    "TrainingName": "Radioactive Materials Safety Training",
+    "CompletionCount": 126
+  },
+  {
+    "TrainingName": "Health Screening Questionnaire",
+    "CompletionCount": 123
+  },
+  {
+    "TrainingName": "DOT Hazard Material Awareness",
+    "CompletionCount": 124
+  },
+  {
+    "TrainingName": "IRB Quiz",
+    "CompletionCount": 103
+  },
+  {
+    "TrainingName": "OHS Training",
+    "CompletionCount": 121
+  },
+  {
+    "TrainingName": "Retraining in working with the IACUC",
+    "CompletionCount": 117
+  },
+  {
+    "TrainingName": "Federally Required RCR Training - Must be delivered by PI (Not available online)",
+    "CompletionCount": 118
+  },
+  {
+    "TrainingName": "Medical Records",
+    "CompletionCount": 109
+  }
+]
