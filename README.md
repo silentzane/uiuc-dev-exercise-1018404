@@ -9,6 +9,7 @@ Using the language of your choice, write a small application that:
 		* Use parameters: Trainings = "Electrical Safety for Labs", "X-Ray Safety", "Laboratory Safety Training"; Fiscal Year = 2024
 	* Given a date, find all people that have any completed trainings that have already expired, or will expire within one month of the specified date (A training is considered expired the day after its expiration date). For each person found, list each completed training that met the previous criteria, with an additional field to indicate expired vs expires soon.
 		* Use date: Oct 1st, 2023
+	*  _A note for all tasks. It is possible for a person to have completed the same training more than once. In this event, only the most recent completion should be considered._
 
 Requirements for the above application:
 
