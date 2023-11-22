@@ -6,9 +6,8 @@ class Program
     {
         List<Person> people;
         
-        // Get the current directory for the exe
+        // Get the current directory
         string workingDirectory = Environment.CurrentDirectory;
-        //string projectDirectory = Directory.GetParent(workingDirectory).Parent.Parent.FullName;
 
         if (workingDirectory is not null) {
             // Set the file path for trainings.txt
